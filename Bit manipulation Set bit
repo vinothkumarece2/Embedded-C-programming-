@@ -1,0 +1,14 @@
+Setting a bit means setting its value to 1. In C, we can set a given bit using the OR operator (|) combined with a bit mask.
+
+#include<stdio.h>
+int main()
+{
+
+   unsigned int num = 108;
+   unsigned int mask;
+    mask = (1<<5);
+    num = num | mask;
+    printf("the modified number is %u",num);
+}
+
+op is 108
