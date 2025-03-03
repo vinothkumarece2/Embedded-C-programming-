@@ -1,0 +1,21 @@
+Clearing a Specific Bit in C
+To clear a specific bit in a number, you can use a bit mask with the AND operator. In that bitmask number, only the bit you want to clear is set to 0, and all other bits are set to 1.
+input:
+binary_number: 01100111
+bit to clear: 5th
+Output:
+binary_number: 01100111
+mask_used: 11011111
+We can use the left shift operator with NOT operator to create a mask but remember the 0-based indexing in the shifting.
+
+#include<stdio.h>
+int main()
+{
+    int num = 103;
+    int pos;
+    int mask;
+    mask=(num&~(1<<5));
+    num = num & mask;
+    printf("the clear bit is %d",num);
+}
+  OP the clear bit 5 position  after OP is 71
