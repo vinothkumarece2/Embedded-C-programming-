@@ -13,3 +13,6 @@ int main()
     printf("the Op is %d\n",num);
 
 }
+
+
+Op is 101
