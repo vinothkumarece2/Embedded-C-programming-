@@ -1,0 +1,15 @@
+We can also clear multiple bits by creating a mask with multiple bits set to 0. ANDing the number with this mask will clear all corresponding bits.
+Example: Clearing the 1st, 3rd, and 4th Bits.
+
+
+#include<stdio.h>
+int main()
+{
+
+    int num = 103;
+    int mask;
+    mask = ~(1<<1) | (1<<3) | (1<<4);
+    num = num & mask;
+    printf("the Op is %d\n",num);
+
+}
